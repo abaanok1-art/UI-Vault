@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiSearch, FiMenu, FiX, FiMail } from 'react-icons/fi';
-import navlogo from '../../assets/logo.png';
+import navlogo from '../../assets/ui-stash-logo.svg';
 import './navbar.css';
 
 export default function Navbar({ onOpenSearch, onOpenContact, onToggleSidebar, isSidebarOpen }) {
@@ -27,10 +27,6 @@ export default function Navbar({ onOpenSearch, onOpenContact, onToggleSidebar, i
 
           <Link to="/" className="navbar-brand">
             <img className="nav-brand-img" src={navlogo} alt="UI Stash" />
-            <div className="brand-text-wrap">
-              <span className="brand-name">UI<span className="brand-highlight">STASH</span></span>
-              <span className="brand-badge">PRO</span>
-            </div>
           </Link>
         </div>
 
