@@ -27,6 +27,7 @@ export default function Navbar({ onOpenSearch, onOpenContact, onToggleSidebar, i
 
           <Link to="/" className="navbar-brand">
             <img className="nav-brand-img" src={navlogo} alt="UI Stash" />
+            <span className="brand-name">UI <span className="brand-highlight">STASH</span></span>
           </Link>
         </div>
 
