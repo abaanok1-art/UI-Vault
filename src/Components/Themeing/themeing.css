@@ -1,0 +1,213 @@
+.theming-container {
+  max-width: 950px;
+  margin: 0 auto;
+  color: #e2e8f0;
+}
+
+.theming-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.theming-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.theming-subtitle {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Code Snippet Box */
+.code-box {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 45px;
+  backdrop-filter: blur(12px);
+}
+
+.code-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(6, 182, 212, 0.2);
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.copy-code-btn {
+  background: rgba(6, 182, 212, 0.2);
+  color: #00f2fe;
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.copy-code-btn:hover {
+  background: rgba(6, 182, 212, 0.35);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+}
+
+.code-box-body {
+  padding: 22px;
+  margin: 0;
+  color: #38bdf8;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+/* Theme Presets */
+.theme-presets-section {
+  text-align: center;
+}
+
+.theme-presets-section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.theme-presets-section p {
+  color: #94a3b8;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.preset-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.preset-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(15, 23, 42, 0.7);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.25s ease;
+}
+
+.preset-btn.cyan.active {
+  color: #00f2fe;
+  border-color: #06b6d4;
+  box-shadow: 0 0 16px rgba(6, 182, 212, 0.4);
+}
+
+.preset-btn.purple.active {
+  color: #c084fc;
+  border-color: #a855f7;
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.4);
+}
+
+.preset-btn.emerald.active {
+  color: #34d399;
+  border-color: #10b981;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
+}
+
+/* Preview Glass Card */
+.preview-glass-card {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(14px);
+  transition: all 0.3s ease;
+}
+
+.preview-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.preview-glass-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.preview-glass-card p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.preview-action-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+/* Specific Presets */
+.preview-glass-card.theme-cyan {
+  border: 1px solid rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.25);
+}
+.preview-glass-card.theme-cyan h3 { color: #00f2fe; }
+.preview-glass-card.theme-cyan .preview-action-btn {
+  border: 1px solid #06b6d4;
+  color: #00f2fe;
+}
+.preview-glass-card.theme-cyan .preview-action-btn:hover {
+  background: rgba(6, 182, 212, 0.2);
+}
+
+.preview-glass-card.theme-purple {
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+}
+.preview-glass-card.theme-purple h3 { color: #c084fc; }
+.preview-glass-card.theme-purple .preview-action-btn {
+  border: 1px solid #a855f7;
+  color: #c084fc;
+}
+.preview-glass-card.theme-purple .preview-action-btn:hover {
+  background: rgba(168, 85, 247, 0.2);
+}
+
+.preview-glass-card.theme-emerald {
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.25);
+}
+.preview-glass-card.theme-emerald h3 { color: #34d399; }
+.preview-glass-card.theme-emerald .preview-action-btn {
+  border: 1px solid #10b981;
+  color: #34d399;
+}
+.preview-glass-card.theme-emerald .preview-action-btn:hover {
+  background: rgba(16, 185, 129, 0.2);
+}
